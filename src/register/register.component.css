@@ -1,0 +1,49 @@
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+    padding-top: 20px;
+}
+
+.register{
+  background-image: url("https://img.freepik.com/premium-photo/blurred-interior-hospital-abstract-medical-background_1028938-285031.jpg?size=626&ext=jpg&ga=GA1.1.474975417.1727431045&semt=ais_hybrid");
+  background-size: cover;
+} 
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #a4a2a2;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+    border: 1px solid #121111;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+    font-size: larger;
+}
+
+.btnClose
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #c60150;
+    color: #fff;
+    font-size: larger;
+    margin-left: 690px;
+}

@@ -1,0 +1,134 @@
+{
+  "patientData": [
+    {
+      "fullName": "Tasman Sheikh",
+      "dob": "10-06-1979",
+      "sex": "Male",
+      "address": "GopalGanj",
+      "contact": "01559311566",
+      "bloodgroup": "B+",
+      "history": "No",
+      "operation": "Yes",
+      "admitdate": "03/03/2024",
+      "discharge": "05/03/2024",
+      "id": "4aae"
+    },
+    {
+      "id": "4a46",
+      "fullName": "Fatima Begum",
+      "dob": "10/05/1995",
+      "sex": "Female",
+      "address": "Savar",
+      "contact": "0171",
+      "bloodgroup": "O+",
+      "history": "Backpain",
+      "operation": "No",
+      "admitdate": "12/10/2024",
+      "discharge": "17/10/2024"
+    },
+    {
+      "id": "5053",
+      "fullName": "Sagor Hasan",
+      "dob": "10/02/1987",
+      "sex": "Male",
+      "address": "Agargaon",
+      "contact": "0171",
+      "bloodgroup": "B-",
+      "history": "Heart Problem",
+      "operation": "Yes",
+      "admitdate": "01/09/2024",
+      "discharge": "04/09/2024"
+    },
+    {
+      "id": "6ecb",
+      "fullName": "Akash Khan",
+      "dob": "10/12/2000",
+      "sex": "Male",
+      "address": "Tongi",
+      "contact": "0171",
+      "bloodgroup": "AB-",
+      "history": "No",
+      "operation": "No",
+      "admitdate": "14/09/2024",
+      "discharge": "17/09/2024"
+    },
+    {
+      "id": "50aa",
+      "fullName": "Monir",
+      "dob": "06/02/1995",
+      "sex": "Male",
+      "address": "Chuadanga",
+      "contact": "0171",
+      "bloodgroup": "B+",
+      "history": "No",
+      "operation": "No",
+      "admitdate": "21/02/2024",
+      "discharge": "25/02/2024"
+    }
+  ],
+  "doctorData": [
+    {
+      "name": "Rakibul Hasan",
+      "sex": "Male",
+      "department": "Orthopedics",
+      "availability": "Morning Shift",
+      "contact": "0171",
+      "address": "Sylhet",
+      "id": "dcb1"
+    },
+    {
+      "name": "Dr. Azahar Uddin",
+      "sex": "Male",
+      "department": "Gastrology",
+      "availability": "Morning Shift",
+      "contact": "0171",
+      "address": "Dhaka",
+      "id": "41ac"
+    },
+    {
+      "id": "aa4e",
+      "name": "Harunur Rashid",
+      "sex": "Male",
+      "department": "Emergency medicine",
+      "availability": "Day Shift",
+      "contact": "0171",
+      "address": "Dhaka"
+    },
+    {
+      "id": "8e32",
+      "name": "Fatima Jahan",
+      "sex": "Female",
+      "department": "Obstetrics and gynaecology",
+      "availability": "Morning Shift",
+      "contact": "0171",
+      "address": "Barishal"
+    },
+    {
+      "id": "7056",
+      "name": "Shuvechsa Howlader",
+      "sex": "Female",
+      "department": "Obstetrics and gynaecology",
+      "availability": "Day Shift",
+      "contact": "0171",
+      "address": "Barishal"
+    },
+    {
+      "id": "c940",
+      "name": "Tasnima Jahan",
+      "sex": "Female",
+      "department": "Obstetrics and gynaecology",
+      "availability": "Night Shift",
+      "contact": "0171",
+      "address": "Savar"
+    },
+    {
+      "id": "f2a9",
+      "name": "Bishwajit Devnath",
+      "sex": "Male",
+      "department": "Emergency medicine",
+      "availability": "Night Shift",
+      "contact": "0171",
+      "address": "Rangpur"
+    }
+  ]
+}

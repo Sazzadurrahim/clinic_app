@@ -1,0 +1,76 @@
+
+<div id="login">
+   <div class="container">
+       <div id="login-row" class="row justify-content-center align-items-center">
+           <div id="login-column" class="col-md-6">
+               <div id="login-box" class="col-md-12">
+                   <form id="login-form" class="form" action="" method="post">
+                       <h3 class="text-center text-info"><b>Search Patient Information</b></h3>
+                       <div class="form-group">
+                           <label for="patientName" class="text-info">Patient Name:</label><br>
+                           <input type="text" name="patientName" id="patientName"
+                           [(ngModel)]="pName" class="form-control">
+                       </div><br>
+                       <div class="form-group">
+                           <label for="contact" class="text-info">Contact:</label><br>
+                           <input type="text" name="contact"  id="contact" [(ngModel)]="pContact" class="form-control">
+                       </div><br>
+                       <div class="form-group  justify-content-center text-center">
+                        <button  type="button" class="btn btn-outline-info btn-lg m-3" 
+                        id="" (click)="showAllData()">ShowAll</button>
+
+                           <button  type="button" class="btn btn-outline-info btn-lg m-3" 
+                        id="" (click)="onSearch()">Search</button>
+
+                           <button  type="button" class="btn btn-outline-info btn-lg m-3" 
+                        id="" (click)="logout()">Logout</button>
+                        </div>
+                      
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<br>
+<div>
+    <table id="tbl" class="table table-bordered thead-dark">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Sex</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>BloodGroup</th>
+            <th>History</th>
+            <th>Operation</th>
+            <th>Admit Date</th>
+            <th>Discharge</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+            @for (item of jointInfo; track $index) {
+           <tr>
+            <td>{{item.fullName}}</td>
+            <td>{{item.dob}}</td>
+            <td>{{item.sex}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.contact}}</td>
+            <td>{{item.bloodgroup}}</td>
+            <td>{{item.history}}</td>
+            <td>{{item.operation}}</td>
+            <td>{{item.admitdate}}</td>
+            <td>{{item.discharge}}</td>
+            <td>
+                <button type="button" class="btn btn-success" (click)="onEdit(item.id!)">Edit</button>
+                <button type="button" class="btn btn-danger" (click)="onDelete(item.id!)">Delete</button>
+            </td>
+           </tr>
+        } 
+
+        </tbody>
+
+    </table>
+</div>

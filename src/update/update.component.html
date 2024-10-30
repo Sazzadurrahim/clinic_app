@@ -1,0 +1,100 @@
+<div class="register">
+    <div class="container register-form">
+       <div class="form box">
+          <div class="note">
+             <h2 ><b style="color: rgb(94, 244, 94);"> Update Patient Data.</b></h2>
+          </div>
+      <form >
+          <div class="form-content">
+          <div class="row" >       
+       <!-- --------------------left side column--------------------- -->
+                <div class="col-md-6">
+                   <div class="form-group">
+                     <label for="name"><b>Name</b></label>
+                      <input type="text"
+                       class="form-control" 
+                        [(ngModel)]="patient.fullName" 
+                         name="name" value="" />
+                   </div>
+                   <div class="form-group">
+                     <label for="dob"><b>Date of Birth(Unchangeable)</b></label>
+                      <input type="date" 
+                      class="form-control" 
+                      name="dob" value="" 
+                      [(ngModel)]="patient.dob" />
+                   </div>
+                   <div class="form-group">
+                     <label for="sex"><b>Sex</b></label>
+                     <select class="form-control" [(ngModel)]="patient.sex" name="sex" id="sex">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                   </div>
+                   <div class="form-group">
+                     <label for="contact"><b>Contact</b></label>
+                      <input type="text"
+                       class="form-control" 
+                       name="contact" value="" 
+                      [(ngModel)]="patient.contact" />
+                   </div>
+                   <div class="form-group">
+                     <label for="address"><b>Address</b></label>
+                      <input type="text" 
+                      class="form-control" 
+                      name="address" value="" 
+                      [(ngModel)]="patient.address"  />
+                   </div>
+                </div>
+       <!-- -------------right side column--------------------- -->
+                <div class="col-md-6">
+                   <div class="form-group">
+                     <label for="bloodgroup"><b>Blood Group</b></label>
+                     <select class="form-control" [(ngModel)]="patient.bloodgroup"  id="bloodgroup" name="bloodgroup">
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="AB+">AB+</option>
+                        <option value="O+">O+</option>
+                        <option value="A-">A-</option>
+                        <option value="B-">B-</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O-">O-</option>
+                    </select>
+                   </div>
+                   <div class="form-group">
+                     <label for="history"><b>Medical History</b></label>
+                      <input type="text" 
+                      class="form-control" 
+                      name="history" value="" 
+                      [(ngModel)]="patient.history" />
+                   </div>
+                   <div class="form-group">
+                     <label for="operation"><b>Previous Operation</b></label>
+                      <input type="text" 
+                      class="form-control" 
+                      name="operation" value="" 
+                      [(ngModel)]="patient.operation" />
+                   </div>
+                   <div class="form-group">
+                     <label for="admitdate"><b>Admit Date(Update if Necessary)</b></label>
+                      <input type="date" 
+                      class="form-control" 
+                      name="admitdate" value="" 
+                      [(ngModel)]="patient.admitdate" />
+                   </div>
+                   <div class="form-group">
+                     <label for="discharge"><b>Discharge Date(Update if Necessary)</b></label>
+                      <input type="date" 
+                      class="form-control" 
+                      name="discharge" value="" 
+                      [(ngModel)]="patient.discharge" />
+                   </div>
+                </div>
+             </div>
+             <br>
+             <button type="button" class="btnSubmit" (click)="updateData()">Update</button>
+             <button type="button" class="btnClose" (click)="closePage()">Close</button>
+          </div>
+      </form>
+       </div>
+    </div>
+    </div>

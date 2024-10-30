@@ -1,0 +1,117 @@
+<div class="register">
+<div class="container register-form">
+   <div class="form box">
+      <div class="note">
+         <h2 ><b style="color: rgb(252, 13, 13);">No DATA matched.</b>
+             <b style="color: rgb(94, 244, 94);"> Register as a new PATIENT!</b></h2>
+      </div>
+
+      <form  [formGroup]="formValue">
+      <div class="form-content">
+         <div class="row">
+   <!--left side column--------------------- -->
+            <div class="col-md-6">
+               <div class="form-group">
+                  <label for="fullName"><b>Patient Name</b></label>
+                  <input type="text" 
+                  class="form-control" 
+                  placeholder="Full Name *"  
+                  value="" 
+                  formControlName="fullName" 
+                  id="fullName" />
+               </div>
+               <div class="form-group">
+                  <label for="dob"><b>Date of Birth</b></label>
+                  <input type="date" 
+                  class="form-control" 
+                  placeholder="Date of Birth*" 
+                  value=""
+                  formControlName="dob" 
+                  id="dob"/>
+               </div>
+               <div class="form-group">
+                  <label for="sex"><b>Sex</b></label>
+                  <select class="form-control" formControlName="sex"  id="sex">
+                     <option value="">Select Sex</option>
+                     <option value="Male">Male</option>
+                     <option value="Female">Female</option>
+                 </select>
+               </div>
+               <div class="form-group">
+                  <label for="contact"><b>Contact</b></label>
+                  <input type="text" 
+                  class="form-control" 
+                  placeholder="Contact *" 
+                  value="" 
+                  formControlName="contact" 
+                  id="contact"/>
+               </div>
+               <div class="form-group">
+                  <label for="address"><b>Address</b></label>
+                  <input type="text" 
+                  class="form-control" 
+                  placeholder="Address *" 
+                  value="" 
+                  formControlName="address" 
+                  id="address"/>
+               </div>
+            </div>
+   <!-- ----right side column--------------------- -->
+            <div class="col-md-6">
+               <label for="bloodgroup"><b>Blood Group</b></label>
+                  <select class="form-control" formControlName="bloodgroup"  id="bloodgroup">
+                     <option value="">Select Blood Group</option>
+                     <option value="A+">A+</option>
+                     <option value="B+">B+</option>
+                     <option value="AB+">AB+</option>
+                     <option value="O+">O+</option>
+                     <option value="A-">A-</option>
+                     <option value="B-">B-</option>
+                     <option value="AB-">AB-</option>
+                     <option value="O-">O-</option>
+                 </select>
+               <div class="form-group">
+                  <label for="history"><b>Treatment History</b></label>
+                  <input type="text" 
+                  class="form-control" 
+                  placeholder="History *" 
+                  value="" 
+                  formControlName="history" 
+                  id="history"/>
+               </div>
+               <div class="form-group">
+                  <label for="operation"><b>Previous Operation</b></label>
+                  <input type="text" 
+                  class="form-control" 
+                  placeholder="Operation *" 
+                  value="" 
+                  formControlName="operation" 
+                  id="operation"/>
+               </div>
+               <div class="form-group">
+                  <label for="admitdate"><b>Admit Date</b></label>
+                  <input type="date" 
+                  class="form-control" 
+                  placeholder="Admit Date *" 
+                  value="" 
+                  formControlName="admitdate" 
+                  id="admitdate"/>
+               </div>
+               <div class="form-group">
+                  <label for="discharge"><b>Discharge</b></label>
+                  <input type="date" 
+                  class="form-control" 
+                  placeholder="Discharge *" 
+                  value="" 
+                  formControlName="discharge" 
+                  id="discharge"/>
+               </div>
+            </div>
+         </div><br>
+         <button type="button" class="btnSubmit" (click)="saveData()">Register</button>
+         <button type="button" class="btnClose" (click)="cancelAdding()">Cancel</button>
+      </div>
+      </form>
+   </div>
+</div>
+</div>
